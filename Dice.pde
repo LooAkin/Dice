@@ -20,16 +20,12 @@ void draw()
   totalFour = 0;
   totalFive = 0;
   totalSix = 0;
-  int k = 50;
-  while (k < 800){
-    int i = 50;
-   while (i < 850){ 
+  for(int k = 50; k < 800; k = k + 60) {
+    for(int i = 50; i < 850; i = i + 60){ 
      one = new Die (k, i);  
      one.roll();
      one.show();
-     i = i + 60;
    }
-   k = k + 60;
   }
   textSize(20);
   text("TOTAL: ", 900, 75);  
